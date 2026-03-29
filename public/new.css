@@ -1,0 +1,90 @@
+/* Reset & body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(253, 216, 168);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    
+    text-align: center;
+    justify-content: center;
+    background-color: #0e0808;
+    color: wheat;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+/* Heading */
+h2 {
+    
+    background-color: rgb(17, 10, 10);
+    padding: 10px 20px;
+    color: wheat;
+    border-radius: 20px;
+}
+
+/* Form container */
+form {
+    width: 500px;
+    max-width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-top: 20px;
+
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+}
+
+/* Input fields */
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+}
+
+/* Textarea height */
+textarea {
+    height: 120px;
+    
+}
+
+/* Button */
+button {
+    padding: 10px;
+    background-color: #0a0707;
+    color: wheat;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    display: block;  
+    margin: 0 auto;  
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #444;
+}
+.edit-h2{
+    margin-top: 50px;
+    font-size: larger;
+}
+.edit-title{
+    width:600px;
+}
