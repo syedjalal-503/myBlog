@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edits</title>
+<link rel="stylesheet" href="/new.css">
+</head>
+<body>
+    <div class="edit-h2">EDIT POST</div>
+<form action="/edit/<%= post.id %>" method="POST">
+<input type="text" name="edit-title" value="<%= post.title %>" required />  <br>
+  <textarea name="content" placeholder="Write your post..." required><%= post.content %></textarea>
+  <button type="submit">EDITED</button>
+</form>
+</body>
+</html>
