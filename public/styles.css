@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: rgb(253, 216, 168);
+}
+
+header,.welcome{
+  text-align: center;
+   text-align: center;
+    justify-content: center;
+    background-color: #0e0808;
+    color: wheat;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.createpost {
+    display: inline-flex;   /* better for button */
+    padding: 10px 20px;     /* controls size properly */
+    
+    justify-content: center;
+    align-items: center;
+
+    background-color:white;
+    color:black;
+    border-radius: 10px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    /* move to right properly */
+    float: right;
+    margin-right: 10px;
+}
+
+   .nopost {
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
+    height: 55vh;              /* IMPORTANT: gives space to center */
+    text-align: center;
+    flex-direction: column;    /* keeps text + link in column */
+} 
+span{
+    color: rgb(221, 10, 10);
+}
+/* Container for all posts */
+.allposts {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr); /* 4 posts in one row */
+    gap: 20px; /* space between posts */
+    padding: 20px;
+}
+
+/* Each post as a square card */
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+     position: relative;
+    /* Make it square */
+    aspect-ratio: 1 / 1;
+
+    /* Center content inside */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Styling */
+    box-shadow: 0 20px 10px rgba(0,0,0,0.1);
+     overflow-x: auto;
+}
+
+/* Title styling */
+.post h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Content styling */
+.post p {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #222;
+    color: white;
+    padding: 10px 15px;
+}
+.delete,.edit{
+    position: absolute;
+
+    bottom: 10px;   /* move to bottom */
+    right: 10px;    /* move to right */
+
+    cursor: pointer;
+    font-size: 18px;    
+}
+.edit{
+    right: 40px;    /* move left of delete */
+}
+.delete a {
+    color: black;
+    transition: 0.3s;
+}
+
+.delete a:hover {
+    color: red;
+}
+.edit-h2{
+    text-align: center;
+}
+.title{
+    width: 90%;
+}
