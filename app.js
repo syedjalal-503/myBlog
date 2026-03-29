@@ -2,9 +2,8 @@ import express from "express";
 import bodyparser from "body-parser";
 
 const app = express();
-const port = 3000;
 let posts= [];
-
+const port = process.env.port || 3000;
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
