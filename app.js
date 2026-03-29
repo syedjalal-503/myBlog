@@ -2,15 +2,16 @@ import express from "express";
 import bodyparser from "body-parser";
 
 const app = express();
+const port = 3000;
 let posts= [];
-const port = process.env.port || 3000;
+
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get("/",(req,res)=>
 {
-    res.render("index");
+    res.render("index",{posts:posts});
 });
 
 app.get("/delete/:id",(req,res)=>{
@@ -30,7 +31,7 @@ app.get("/edit/:id", (req, res) => {
 });
 app.post("/edit/:id", (req, res) => {
   const postId = Number(req.params.id);
-     console.log(postId);
+    console.log(postId);
   const postIndex = posts.findIndex(p => p.id === postId);
 
   if (postIndex === -1) {
