@@ -11,7 +11,7 @@ app.set("view engine", "ejs");
 
 app.get("/",(req,res)=>
 {
-    res.render("index",{posts:posts});
+    res.render("index");
 });
 
 app.get("/delete/:id",(req,res)=>{
